@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <!-- 
+Timeline Template
+http://www.templatemo.com/preview/templatemo_427_timeline
+-->
+    <title>Dheergayu | Clinical Depression Monitoring Assistant</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css" />
+
+    <!-- JavaScripts -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/vendor/modernizr.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM"></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+              >
+                <i class="fa fa-bars"></i>
+              </button>
+              <div class="logo-wrapper">
+                <a class="navbar-brand" href="#templatemo">
+                  <p>T<em>imeline</em></p>
+                </a>
+              </div>
+            </div>
+            <div class="collapse navbar-collapse" id="main-menu"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Project Milestones</h4>
+            <p>What we have done</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="second-section">
+      <div class="heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Latest Work</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="second-section2">
+      <div class="container">
+        <div class="row">
+          <div class="triangle"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <section id="cd-timeline-2" class="cd-container">
+              <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                  <img src="images/camera-icon.png" alt="Picture" />
+                </div>
+
+                <div class="cd-timeline-content projects">
+                  <img src="images/project-1.jpg" alt="" />
+                  <div class="project-content">
+                    <h2>Donec at scelerisque</h2>
+                    <span>18 December 2084</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                  <img src="images/camera-icon.png" alt="Picture" />
+                </div>
+
+                <div class="cd-timeline-content projects">
+                  <img src="images/project-2.jpg" alt="" />
+                  <div class="project-content">
+                    <h2>Nullam hendrerit ultrices</h2>
+                    <span>12 December 2084</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                  <img src="images/camera-icon.png" alt="Picture" />
+                </div>
+
+                <div class="cd-timeline-content projects">
+                  <img src="images/project-3.jpg" alt="" />
+                  <div class="project-content">
+                    <h2>Quisque mollis diam</h2>
+                    <span>10 December 2084</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                  <img src="images/camera-icon.png" alt="Picture" />
+                </div>
+
+                <div class="cd-timeline-content projects">
+                  <img src="images/project-4.jpg" alt="" />
+                  <div class="project-content">
+                    <h2>Etiam a ultricies</h2>
+                    <span>30 November 2084</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                  <img src="images/camera-icon.png" alt="Picture" />
+                </div>
+
+                <div class="cd-timeline-content projects">
+                  <img src="images/project-5.jpg" alt="" />
+                  <div class="project-content">
+                    <h2>Curabitur interdum</h2>
+                    <span>22 November 2084</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascripts -->
+    <script>
+      function initialize() {
+        var mapProp = {
+          center: new google.maps.LatLng(40.7828839, -73.9652425),
+          zoom: 15,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+        };
+        var map = new google.maps.Map(
+          document.getElementById("templatemo-map"),
+          mapProp
+        );
+      }
+
+      google.maps.event.addDomListener(window, "load", initialize);
+      google.maps.event.addDomListener(window, "resize", function () {
+        map.setCenter(center);
+      });
+    </script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>
